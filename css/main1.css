@@ -144,11 +144,9 @@
 }
 
 .form-professtion:focus,
-.form-profession:focus,
-.focus-none:focus{
+.form-profession:focus{
     box-shadow: none;
     background-color:rgba(243, 243, 243, 1);
-    /* border: inherit; */
 }
 .form-shadow{
     box-shadow: 0px 0px 10px 0px rgba(132, 15, 175, 0.2);
@@ -173,6 +171,9 @@
     .treat-text {
         font-size: 65px;
     }
+    .border-end {
+        border-right: none !important ;
+    }
 }
 @media screen and (max-width:768px) {
     #perv, #next {
@@ -180,9 +181,6 @@
     }
     .treat-text {
         font-size: 40px;
-    }
-    .border-right {
-        border-right: none;
     }
 }
 @media screen and (max-width:576px) {
