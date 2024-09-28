@@ -11,7 +11,7 @@
     background-color: rgba(243, 243, 243, 1);
 }
 
-.focus-none:focus {
+.focus-none:focus{
     border: none;
     outline: none;
 }
@@ -142,6 +142,9 @@
 .form-bg{
     background-color:rgba(243, 243, 243, 1);
 }
+
+.form-professtion:focus,
+.form-profession:focus,
 .focus-none:focus{
     box-shadow: none;
     background-color:rgba(243, 243, 243, 1);
