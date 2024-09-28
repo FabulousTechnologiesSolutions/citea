@@ -13,7 +13,7 @@
     background-color: var(--prpl);
 }
 .my-shadow{
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-shadow: 0px 0px 8px 0px rgba(132, 15, 175, 0.2);
 }
 .my-gradient {
     background: linear-gradient(to bottom right, #840FAF 0%, rgba(132, 15, 175, 0.5) 70%, transparent 100%) !important;
@@ -113,12 +113,10 @@
     border-radius: 35px;
     padding: 10px 20px;
 }
-.check-service:checked {
-    background-color: var(--prpl);
-    border-color: transparent;
+.prpl-checkBox{
+    accent-color: var(--prpl);
     height: 20px;
     width: 20px;
-    cursor: pointer;
 }
 .hovr{
     border: 1px solid transparent;
