@@ -3,6 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: 'abeezeeregular';
+    src: url('/fonts/abeezee-regular-webfont.woff2') format('woff2'),
+         url('/fonts/abeezee-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+
+}
+body{
+    font-family: 'abeezeeregular';
+}
 :root{
     --prpl:#840FAF;
 }
@@ -16,14 +27,15 @@
     box-shadow: 0px 0px 8px 0px rgba(132, 15, 175, 0.2);
 }
 .my-gradient {
-    background: linear-gradient(to bottom right, #840FAF 0%, rgba(132, 15, 175, 0.5) 70%, transparent 100%) !important;
-  }
+    background: linear-gradient(135deg, #840FAF 0%, rgba(132, 15, 175, 0) 100%);
+}
 .focus-none:focus{
     outline: none;
     box-shadow: none;
 }
 .nav-sec{
-    background-color: burlywood;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     padding: 15px 0px;
@@ -108,6 +120,40 @@
     font-size: 24px;
     cursor: pointer;
 }
+.hero-icons{
+    max-width: 30px;
+}
+.bokappoint-btn{
+    padding: 12px 23px;
+    border: 1px solid var(--prpl);
+    border-radius: 10px;
+    background-color: white;
+}
+.font-italic {
+    font-style: italic;
+}
+.elp2::before {
+    content: '';
+    position: absolute;
+    background-image: url('/imgs/Ellipse 2.png'), url('/imgs/Ellipse 4.png') ,url('/imgs/Ellipse 3.png');
+    background-position: 110%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+}
+
+
+
+
+
+
+
+
+
+
+
 .round-bok{
     border: 1px solid #D8D8D8;
     border-radius: 35px;
@@ -136,7 +182,7 @@
     object-fit: contain;
 }
 .fix-heiht1{
-    height: calc(50% - 15px);
+    height: calc(50% - 0px);
 }
 .prpl-btn{
     border: 0;
@@ -168,9 +214,9 @@
 }
 .crown-icon {
     position: absolute;
-    top: -34px;
-    right: -16px;
-    max-width: 55px;
+    top: -53px;
+    right: -24px;
+    max-width: 80px;
 }
 .max-cont{
     width: max-content;
@@ -200,7 +246,6 @@
     scale: 1.2;
 }
 .service-sec .nav-pills .nav-link.active{
-    color: var(--bs-nav-pills-link-active-color);
     background-color: var(--prpl) !important;
 }
 .service-sec .nav-pills .nav-link {
@@ -208,6 +253,10 @@
 }
 .service-sec .nav-link{
     color: var(--prpl);
+}
+.team-pics{
+    width: 100%;
+    max-width: 250px;
 }
 
 @media (max-width: 768px) {
@@ -241,12 +290,18 @@
         display: none;
     }
 }
+@media screen and (max-width:990px) {
+    .crown-icon {
+        position: absolute;
+        top: -39px;
+        right: -16px;
+        max-width: 55px;
+    }
+}
 @media screen and (max-width:1200px) {
     .scale-2 {
         scale: 1;
     }
-}
-@media screen and (max-width:1200px) {
     .bordr-right{
         border-right: none;
     }
