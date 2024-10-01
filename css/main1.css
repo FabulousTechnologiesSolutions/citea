@@ -10,9 +10,7 @@ box-sizing: border-box;
     --black-light: rgba(96, 96, 96, 1);
     --white: rgba(255, 255, 255, 1);
     --grey: rgba(131, 131, 131, 1);
-
 }
-
 .color-grey {
     color: var(--grey);
 }
@@ -222,12 +220,13 @@ box-sizing: border-box;
     height: calc(100dvh - 220px);
     width: 100%;
 }
-
+.text-grey{
+    color:#838383;
+}
 .main-left {
     height: 100%;
     overflow-y: auto;
 }
-
 .panel-icon {
     width: 25px;
     height: 25px;
@@ -255,7 +254,6 @@ box-sizing: border-box;
     width: 7px;
     height: 7px;
 }
-
 ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px grey;
     border-radius: 5px;
@@ -280,8 +278,7 @@ box-sizing: border-box;
 }
 .right-bottom{
     width: 100%;
-    height: calc(100dvh - 146px);
-    padding-left: 8px 0px;
+    height: calc(100dvh - 130px);
 }
 .right-inner{
     overflow-y: auto;

@@ -18,6 +18,8 @@ document.getElementById('toggleSwitch').addEventListener('click', function () {
     const logout = document.querySelectorAll('.bottompara');
     const left = document.querySelectorAll('.left');
     const right = document.querySelectorAll('.right');
+    const sideList = document.querySelectorAll('.side-list');
+
 
     sideparap.forEach(function (menuItem) {
         menuItem.style.display = isactive ? 'none' : 'block'; 
@@ -31,6 +33,10 @@ document.getElementById('toggleSwitch').addEventListener('click', function () {
         leftWidth.style.width = isactive ? '100px' : '250px'; 
     });
 
+    sideList.forEach(function (sideList) {
+        sideList.style.justifyContent = isactive ? 'center' : 'start'; 
+    });
+
     right.forEach(function (rightWidth) {
         rightWidth.style.width = isactive ? 'calc(100% - 120px)' : 'calc(100% - 270px)';
     });
@@ -41,6 +47,7 @@ window.addEventListener('resize', function () {
     const logout = document.querySelectorAll('.bottompara');
     const left = document.querySelectorAll('.left');
     const right = document.querySelectorAll('.right');
+    const sideList = document.querySelectorAll('.side-list');
 
     if (window.innerWidth > 992) {
         sideparap.forEach(function (menuItem) {
@@ -54,10 +61,15 @@ window.addEventListener('resize', function () {
         left.forEach(function (leftWidth) {
             leftWidth.style.width = '250px'; 
         });
-
+        sideList.forEach(function (sideList) {
+            sideList.style.justifyContent = 'start'; 
+        });
+      
         right.forEach(function (rightWidth) {
             rightWidth.style.width = 'calc(100% - 270px)';
         });
+
+   
     } else {
         sideparap.forEach(function (menuItem) {
             menuItem.style.display = 'none'; 
@@ -70,9 +82,12 @@ window.addEventListener('resize', function () {
         left.forEach(function (leftWidth) {
             leftWidth.style.width = '100px'; 
         });
-
+        sideList.forEach(function (sideList) {
+            sideList.style.justifyContent = 'center'; 
+        });
         right.forEach(function (rightWidth) {
             rightWidth.style.width = 'calc(100% - 120px)';
         });
+       
     }
 });
