@@ -445,6 +445,58 @@ th:last-child{
     color: var(--white) !important;
     border: 0px !important;
 }
+.modal-call{
+    border: 1px solid var(--purple) !important;
+    background-color: transparent;
+    color: var(--purple) !important;
+}
+.modal-call:hover, .modal-call:focus{
+    border: 1px solid var(--purple) !important;
+    background-color: transparent;
+    color: var(--purple) !important;
+}
+.no-resize {
+    resize: none;
+}
+.citeamodal-size{
+    max-width: 800px;
+}
+.table-content td {
+    text-align: center;
+    vertical-align: middle; 
+}
+.subcription-btn{
+    padding: 8px 10px;
+    background-color: var(--purple);
+    color: var(--white);
+    border: none;
+    border-radius: 7px;
+}
+.modal-close {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: black !important;
+    color: white !important;
+    position: relative;
+}
+.modal-close:hover, .modal-close:focus{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: black !important;
+    color: white !important;
+    position: relative;
+}
+.modal-close::before {
+    content: "×";
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 @media screen and (max-width:992px) {
     .treat-text {
         font-size: 65px;
