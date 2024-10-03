@@ -124,7 +124,7 @@
                 </div>
             </div>
             <div class="right-bottom">
-                <div class="right-inner">
+                <div class="right-inner d-flex flex-column">
                     <h2>Registered Businesses</h2>
                     <p class="mb-0">Dashboard <span class="mx-1">></span>Registered Businesses</p>
                     <div class="table-responsive mt-4 main-table">
@@ -174,9 +174,101 @@
                                         </div>
                                     </td>
                                 </tr>
+                                <tr class="table-content">
+                                    <td>Tony & Guy</td>
+                                    <td>Hair Salon</td>
+                                    <td>Monthly</td>
+                                    <td>John Doe</td>
+                                    <td>
+                                        <div class=" d-flex justify-content-center align-items-center">
+                                                <a href="#" class="text-decoration-none table-icon" data-bs-toggle="modal" data-bs-target="#callModal">
+                                                    <img src="/imgs/tablecall.svg" alt="call" class=" w-100 p-2">
+                                                </a>
+                                                <a href="#" class="text-decoration-none table-icon ms-2" data-bs-toggle="modal" data-bs-target="#mailModal">
+                                                    <img src="/imgs/tablemail.svg" alt="mail" class=" w-100 p-2">
+                                                </a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class=" d-flex justify-content-center align-items-center">
+                                                <a href="#" class="text-decoration-none table-icon2" data-bs-toggle="modal" data-bs-target="#editModal">
+                                                    <img src="/imgs/tableedit.svg" alt="Edit" class=" w-100 p-2">
+                                                </a>
+                                                <a href="#" class="text-decoration-none table-icon2 ms-2" data-bs-toggle="modal" data-bs-target="#delModal">
+                                                    <img src="/imgs/tabledel.png" alt="Dlete" class=" w-100 p-2">
+                                                </a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <a href="#" class="text-decoration-none table-icon3">
+                                                <img src="/imgs/tablemore.svg" alt="More" class="">
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="table-content">
+                                    <td>Tony & Guy</td>
+                                    <td>Hair Salon</td>
+                                    <td>Monthly</td>
+                                    <td>John Doe</td>
+                                    <td>
+                                        <div class=" d-flex justify-content-center align-items-center">
+                                                <a href="#" class="text-decoration-none table-icon" data-bs-toggle="modal" data-bs-target="#callModal">
+                                                    <img src="/imgs/tablecall.svg" alt="call" class=" w-100 p-2">
+                                                </a>
+                                                <a href="#" class="text-decoration-none table-icon ms-2" data-bs-toggle="modal" data-bs-target="#mailModal">
+                                                    <img src="/imgs/tablemail.svg" alt="mail" class=" w-100 p-2">
+                                                </a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class=" d-flex justify-content-center align-items-center">
+                                                <a href="#" class="text-decoration-none table-icon2" data-bs-toggle="modal" data-bs-target="#editModal">
+                                                    <img src="/imgs/tableedit.svg" alt="Edit" class=" w-100 p-2">
+                                                </a>
+                                                <a href="#" class="text-decoration-none table-icon2 ms-2" data-bs-toggle="modal" data-bs-target="#delModal">
+                                                    <img src="/imgs/tabledel.png" alt="Dlete" class=" w-100 p-2">
+                                                </a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <a href="#" class="text-decoration-none table-icon3">
+                                                <img src="/imgs/tablemore.svg" alt="More" class="">
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
-                    </div>
+                    </div>                        
+                    <div class="pagination d-flex justify-content-end mt-auto">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span><i class="fa-solid fa-arrow-left"></i></span> Previous
+                                    </a>
+                                </li>
+                                <li class="page-item "><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item active" aria-current="page">
+                                    <a class="page-link" href="#">3</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link">...</a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">67</a></li>
+                                <li class="page-item"><a class="page-link" href="#">68</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        Next <span><i class="fa-solid fa-arrow-right"></i></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>                                     
                 </div>
             </div>
         </div>
@@ -186,7 +278,7 @@
           <div class="modal-content">
             <div class="modal-header border-0">
               <h1 class="modal-title fs-3 color-purple" id="exampleModalLabel">Make a Call</h1>
-              <button type="button" class="btn-close modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <button type="button" class="btn-close modal-close focus-none" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body text-center dark-black">
                 Are you sure to make a Call?
@@ -203,7 +295,7 @@
           <div class="modal-content">
             <div class="modal-header border-0">
               <h1 class="modal-title fs-3 color-purple" id="exampleModalLabel">Delete Business</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <button type="button" class="btn-close modal-close focus-none" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body text-center dark-black">
                 Are you sure to Delete this Bussiness?
@@ -220,7 +312,7 @@
           <div class="modal-content">
             <div class="modal-header border-0">
               <h1 class="modal-title fs-3 color-purple" id="exampleModalLabel">Email Composite</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <button type="button" class="btn-close modal-close focus-none" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body dark-black">
                 <form>
@@ -255,7 +347,7 @@
           <div class="modal-content">
             <div class="modal-header border-0">
               <h1 class="modal-title fs-3 color-purple" id="exampleModalLabel">Edit Business</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <button type="button" class="btn-close modal-close focus-none" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body dark-black">
                 <form>

@@ -393,6 +393,8 @@ th:last-child{
 }
 .table-shadow{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 .table-shadow td {
     border: none;
@@ -499,21 +501,21 @@ th:last-child{
 }
 .main-table .table tbody tr td{
     background-color: #FEF9FF !important;
-    border-top: 5px solid red;
-    border-bottom: 5px solid red;
+    border-top: 10px solid var(--white);
+    border-bottom: 10px solid var(--white);
 
 }
 
 .main-table .table tbody tr td:first-child{
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    border-left: 5px solid red
+    border-left: 10px solid var(--white);
 }
 
 .main-table .table tbody tr td:last-child{
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    border-right: 5px solid red
+    border-right: 10px solid var(--white);
 }
 .main-table .table tbody tr{
     border: 3px solid red !important;
@@ -524,6 +526,17 @@ th:last-child{
     border-collapse: separate;
     border-spacing: 0px 0px;
     background-color: #fff !important;
+}
+.pagination .page-item.active .page-link {
+    background-color: var(--light-purple);
+    color: var(--purple);
+    border-color: var(--light-purple);
+}
+.pagination .page-link {
+    color: black;    
+}
+.pagination .page-link:hover {
+    color: black;
 }
 @media screen and (max-width:992px) {
     .treat-text {
