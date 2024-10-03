@@ -395,6 +395,8 @@ th:last-child{
 }
 .table-shadow{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 .table-shadow td {
     border: none;
@@ -446,6 +448,97 @@ th:last-child{
     background-color: var(--purple) !important;
     color: var(--white) !important;
     border: 0px !important;
+}
+.modal-call{
+    border: 1px solid var(--purple) !important;
+    background-color: transparent;
+    color: var(--purple) !important;
+}
+.modal-call:hover, .modal-call:focus{
+    border: 1px solid var(--purple) !important;
+    background-color: transparent;
+    color: var(--purple) !important;
+}
+.no-resize {
+    resize: none;
+}
+.citeamodal-size{
+    max-width: 800px;
+}
+.table-content td {
+    text-align: center;
+    vertical-align: middle; 
+}
+.subcription-btn{
+    padding: 8px 10px;
+    background-color: var(--purple);
+    color: var(--white);
+    border: none;
+    border-radius: 7px;
+}
+.modal-close {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: black !important;
+    color: white !important;
+    position: relative;
+}
+.modal-close:hover, .modal-close:focus{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: black !important;
+    color: white !important;
+    position: relative;
+}
+.modal-close::before {
+    content: "×";
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.main-table .table tbody tr td{
+    background-color: #FEF9FF !important;
+    border-top: 10px solid var(--white);
+    border-bottom: 10px solid var(--white);
+
+}
+
+.main-table .table tbody tr td:first-child{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-left: 10px solid var(--white);
+}
+
+.main-table .table tbody tr td:last-child{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-right: 10px solid var(--white);
+}
+.main-table .table tbody tr{
+    border: 3px solid red !important;
+    padding: 14px
+}
+
+.main-table .table{
+    border-collapse: separate;
+    border-spacing: 0px 0px;
+    background-color: #fff !important;
+}
+.pagination .page-item.active .page-link {
+    background-color: var(--light-purple);
+    color: var(--purple);
+    border-color: var(--light-purple);
+}
+.pagination .page-link {
+    color: black;    
+}
+.pagination .page-link:hover {
+    color: black;
 }
 @media screen and (max-width:992px) {
     .treat-text {
