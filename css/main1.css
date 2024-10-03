@@ -291,6 +291,8 @@ box-sizing: border-box;
 .right-top{
     height: 90px;
     width: 100%;
+}
+.right-top-inner {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .right-bottom{
@@ -300,8 +302,8 @@ box-sizing: border-box;
 .right-inner{
     overflow-y: auto;
     height: 100%;
-    padding: 10px;
-    margin: 10px;
+    padding: 10px 5px;
+    margin: 10px 0;
 }
 .search-input-bg{
     background-color:inherit;

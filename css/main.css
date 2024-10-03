@@ -16,9 +16,25 @@ body{
 }
 :root{
     --prpl:#840FAF;
+    --el-prpl:#FDF7FF;
+    --gray:#636466;
+    --green:#00B69B;
+    --red:#FF3030;
 }
 .prpl{
     color: var(--prpl);
+}
+.grey{
+    color: var(--gray);
+}
+.red{
+    color: var(--red);
+}
+.green{
+    color: var(--green);
+}
+.bgel-prpl{
+    background-color: var(--el-prpl);
 }
 .bg-prpl{
     background-color: var(--prpl);
@@ -143,17 +159,6 @@ body{
     height: 100%;
     z-index: -100;
 }
-
-
-
-
-
-
-
-
-
-
-
 .round-bok{
     border: 1px solid #D8D8D8;
     border-radius: 35px;
@@ -259,6 +264,102 @@ body{
     max-width: 250px;
 }
 
+
+/* ........Super Admin......... */
+
+.dropdown-filtr {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-filtr-btn {
+    background-color: #ffffff;
+    border: 1px solid var(--prpl);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.dropdown-filtr-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    border: 1px solid #ccc;
+    z-index: 1;
+}
+
+.dropdown-filtr-content a {
+    color: black;
+    padding: 10px; 
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-filtr-content a:hover {
+    background-color: #f1f1f1;
+}
+.imgIcon-size{
+    height: 20px;
+    width: 20px;
+}
+.imgcon-seiz{
+    height: 50px;
+    width: 50px;
+    border-radius: 40%;
+}
+.dash-shadow{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.bg-progrs1{
+    background-color: #E59DFF;
+}
+.bg-progrs2{
+    background-color: #D257FF;
+}
+.bg-progrs3{
+    background-color: #840FAF;
+}
+.inner-tabs .nav-pills .nav-link.active {
+    color: #840FAF !important;
+    border-bottom: 1px solid #840FAF !important;
+    background-color: transparent !important; 
+    border-radius: 0 !important; 
+}
+.inner-tabs .nav-pills .nav-link {
+    color: black !important;
+    background-color: transparent !important;
+    border-bottom: none !important;
+}
+.inner-tabs .nav-pills .nav-link {
+    padding-bottom: 4px;
+}
+.innrtab-img{
+    position: relative;
+}
+.innrtab-dot{
+    position: absolute;
+    right: 0;
+    top: -4px;
+}
+.inrtab{
+    height: 990px;
+    overflow-y: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -306,3 +407,4 @@ body{
         border-right: none;
     }
 }
+
