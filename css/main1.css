@@ -395,8 +395,8 @@ th:last-child{
 }
 .table-shadow{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 .table-shadow td {
     border: none;
@@ -423,11 +423,11 @@ th:last-child{
 .table-icon3{
     width: 40px;
     height: 40px;
-    background-color: #840FAF1A;
+    border-radius: 50%;
+    background-color: rgba(172, 6, 6, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 8px;
 }
 .modal-del{
     background-color: #AC0606;
@@ -505,15 +505,12 @@ th:last-child{
     background-color: #FEF9FF !important;
     border-top: 10px solid var(--white);
     border-bottom: 10px solid var(--white);
-
 }
-
 .main-table .table tbody tr td:first-child{
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     border-left: 10px solid var(--white);
 }
-
 .main-table .table tbody tr td:last-child{
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -523,22 +520,55 @@ th:last-child{
     border: 3px solid red !important;
     padding: 14px
 }
-
 .main-table .table{
     border-collapse: separate;
     border-spacing: 0px 0px;
     background-color: #fff !important;
 }
 .pagination .page-item.active .page-link {
-    background-color: var(--light-purple);
-    color: var(--purple);
-    border-color: var(--light-purple);
+    background-color: var(--light-purple) !important;
+    color: var(--purple) !important;
+    border-color: var(--light-purple) !important;
 }
 .pagination .page-link {
     color: black;    
 }
 .pagination .page-link:hover {
     color: black;
+}
+.customer-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reschule-modal{
+    max-width: 800px
+}
+.modal-text{
+    font-size: 20px;
+}
+.create-new-btn{
+    padding: 8px 15px;
+    background-color: var(--purple);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+}
+.billingcard-size{
+    height: 60px;
+    width: 60px;
+    background-color:#F4D7FF;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.billing-shadow{
+    box-shadow: 6px 6px 54px 0px #0000000D;
 }
 @media screen and (max-width:992px) {
     .treat-text {
@@ -589,4 +619,9 @@ th:last-child{
     .treat-text {
         font-size: 35px;
     }
+    .pagination .page-link {
+        padding: 0.25rem 0.5rem; 
+        font-size: 0.85rem; 
+    }
 }
+   
