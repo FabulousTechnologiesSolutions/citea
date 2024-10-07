@@ -96,8 +96,15 @@ window.addEventListener('resize', function () {
 
 
 
-const ctx = document.getElementById('myChart').getContext('2d');
 
+
+
+
+
+
+
+
+const ctx = document.getElementById('myChart').getContext('2d');
 // Create gradient with color #840FAF
 const gradient = ctx.createLinearGradient(0, 0, 0, 400);
 gradient.addColorStop(0, 'rgba(132, 15, 175, 0.5)'); // #840FAF with opacity at the top
@@ -119,6 +126,8 @@ new Chart(ctx, {
     }]
   },
   options: {
+    responsive: true, // Make chart responsive
+    maintainAspectRatio: false, // Disable aspect ratio
     plugins: {
       legend: {
         display: false // Remove the legend
@@ -165,59 +174,91 @@ new Chart(ctx, {
 
 
 
-  const ctxDoughnut = document.getElementById('myDoughnutChart').getContext('2d');
 
-  new Chart(ctxDoughnut, {
-    type: 'doughnut', // Change to doughnut chart
-    data: {
-      labels: ['Business Owners', 'Clients', 'Admins'], // Updated labels
-      datasets: [{
-        data: [45, 35, 20], // Sample percentages for each category
-        backgroundColor: [
-          'rgba(132, 15, 175, 0.7)', // Purple shade 1
-          'rgba(100, 0, 150, 0.7)', // Purple shade 2
-          'rgba(160, 50, 200, 0.7)'  // Purple shade 3
-        ],
-        borderColor: [
-          'rgba(132, 15, 175, 1)', // Border color for purple shade 1
-          'rgba(100, 0, 150, 1)', // Border color for purple shade 2
-          'rgba(160, 50, 200, 1)'  // Border color for purple shade 3
-        ],
-        borderWidth: 1,
-        cutout: '70%', // Make the doughnut thinner
-      }]
-    },
-    options: {
-      plugins: {
-        legend: {
-          position: 'left', // Move legend to the left
-          labels: {
-            boxWidth: 20, // Width of the box in the legend
-            padding: 10, // Space between legend items
-            usePointStyle: true, // Use point style for round labels
-          }
-        },
-        tooltip: {
-          callbacks: {
-            label: function(tooltipItem) {
-              const data = tooltipItem.dataset.data[tooltipItem.dataIndex];
-              return tooltipItem.label + ': ' + data + '%'; // Show percentage in tooltip
-            }
+const ctxDoughnut = document.getElementById('myDoughnutChart').getContext('2d');
+
+// Function to set legend position based on screen size
+function getLegendPosition() {
+  return window.matchMedia("(max-width: 768px)").matches ? 'top' : 'left';
+}
+
+// Create the chart
+const doughnutChart = new Chart(ctxDoughnut, {
+  type: 'doughnut',
+  data: {
+    labels: ['Business Owners', 'Clients', 'Admins'],
+    datasets: [{
+      data: [45, 35, 20], // Sample percentages for each category
+      backgroundColor: [
+        '#D257FF', // Purple shade 1
+        '#E59DFF', // Purple shade 2
+        '#840FAF'  // Purple shade 3
+      ],
+      borderColor: [
+        '#D257FF', // Border color for purple shade 1
+        '#E59DFF', // Border color for purple shade 2
+        '#840FAF'  // Border color for purple shade 3
+      ],
+      borderWidth: 1,
+      cutout: '85%', // Make the doughnut thinner
+    }]
+  },
+  options: {
+    plugins: {
+      legend: {
+        position: getLegendPosition(), // Set initial legend position
+        labels: {
+          boxWidth: 20, // Width of the box in the legend
+          padding: 20, // Increased space between legend items
+          usePointStyle: true, // Use point style for round labels
+          generateLabels: function(chart) {
+            const data = chart.data;
+            return data.labels.map((label, index) => {
+              const percentage = data.datasets[0].data[index];
+              return {
+                text: `${label}: ${percentage}%`, // Show label and percentage
+                fillStyle: data.datasets[0].backgroundColor[index],
+                strokeStyle: data.datasets[0].borderColor[index],
+                lineWidth: data.datasets[0].borderWidth,
+                pointStyle: 'circle' // Ensure round labels
+              };
+            });
           }
         }
       },
-      responsive: true,
-      maintainAspectRatio: false, // Allow resizing
-      layout: {
-        padding: {
-          left: 20, // Padding to the left
-          right: 20,
-          top: 20,
-          bottom: 20
+      tooltip: {
+        callbacks: {
+          label: function(tooltipItem) {
+            const data = tooltipItem.dataset.data[tooltipItem.dataIndex];
+            return tooltipItem.label + ': ' + data + '%'; // Show percentage in tooltip
+          }
         }
       }
+    },
+    responsive: true,
+    maintainAspectRatio: false, // Allow resizing
+    layout: {
+      padding: {
+        left: 20, // Padding to the left
+        right: 20,
+        top: 20,
+        bottom: 20
+      }
     }
-  });
+  }
+});
+
+// Listen for window resize and update the legend position
+window.addEventListener('resize', function() {
+  const newPosition = getLegendPosition();
+  if (doughnutChart.options.plugins.legend.position !== newPosition) {
+    doughnutChart.options.plugins.legend.position = newPosition;
+    doughnutChart.update();
+  }
+});
+
+
+
 
 
 
