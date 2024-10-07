@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8f5f03f5e8.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main1.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>User</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="left d-md-block white-bg rounded-4">
+            <div class="left-top">
+                <div class="logo-img">
+                    <a href="dashboard.html" class="text-decoration-none">
+                        <img src="/imgs/logo.svg" alt="logo" class="w-100">
+                    </a>
+                </div>
+            </div>
+            <div class="left-mid p-2">
+                <div class="main-left">
+                    <div class="menu">
+                        <ul class="list-unstyled">
+                            <li class="p-3">
+                                <a href="dashboard.html"
+                                    class="text-decoration-none side-list d-flex align-items-center">
+                                    <img src="/imgs/dashboarc.svg" alt="dashboard" class="panel-icon">
+                                    <p class="mb-0 ms-2 menupara text-grey">Dashboard</p>
+                                </a>
+                            </li>
+                            <li class="p-3 active">
+                                <a href="user.html" class="text-decoration-none side-list d-flex align-items-center">
+                                    <img src="/imgs/userca.svg" alt="user" class="panel-icon">
+                                    <p class="mb-0 ms-2  menupara">User</p>
+                                </a>
+                            </li>
+                            <li class="p-3 ">
+                                <a href="billing.html" class="text-decoration-none side-list d-flex align-items-center">
+                                    <img src="/imgs/subcriptionc.svg" alt="subcription" class="panel-icon">
+                                    <p class="mb-0 ms-2  menupara text-grey">Billing & Payment</p>
+                                </a>
+                            </li>
+                            <li class="p-3 ">
+                                <a href="finance.html" class="text-decoration-none side-list d-flex align-items-center">
+                                    <img src="/imgs/financec.svg" alt="subcription" class="panel-icon">
+                                    <p class="mb-0 ms-2  menupara text-grey">Finance</p>
+                                </a>
+                            </li>
+                            <li class="p-3 ">
+                                <a href="marketing.html"
+                                    class="text-decoration-none side-list d-flex align-items-center">
+                                    <img src="/imgs/marketingc.svg" alt="subcription" class="panel-icon">
+                                    <p class="mb-0 ms-2  menupara text-grey">Marketing</p>
+                                </a>
+                            </li>
+                            <li class="p-3 ">
+                                <a href="contact.html" class="text-decoration-none side-list d-flex align-items-center">
+                                    <img src="/imgs/contactc.svg" alt="subcription" class="panel-icon">
+                                    <p class="mb-0 ms-2  menupara text-grey">Contact</p>
+                                </a>
+                            </li>
+                            <li class="p-3 ">
+                                <a href="setting.html" class="text-decoration-none side-list d-flex align-items-center">
+                                    <img src="/imgs/settingc.svg" alt="Setting" class="panel-icon">
+                                    <p class="mb-0 ms-2 text-grey menupara">Setting</p>
+                                </a>
+                            </li>
+                            <li class="p-3">
+                                <a href="help.html" class="text-decoration-none side-list d-flex align-items-center">
+                                    <img src="/imgs/callc.svg" alt="helping" class="panel-icon">
+                                    <p class="mb-0 ms-2 text-grey menupara">Help</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="left-bottom d-flex justify-content-center align-items-center">
+                <div>
+                    <a href="#" class="text-decoration-none d-flex align-items-center color-grey">
+                        <img src="/imgs/logoutca.svg" alt="logout" class="panel-icon">
+                        <p class="mb-0 fs-5 ms-2 bottompara">Log out</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="right-top">
+                <div class="container-fluid">
+                    <div
+                        class="d-flex p-3 right-top-inner rounded-4 justify-content-end justify-content-md-between align-items-center">
+                        <div class="d-none d-md-block">
+                            <div class="switch-size">
+                                <img src="/imgs/switchboard.svg" alt="toggle" id="toggleSwitch" class="w-100"
+                                    onclick="">
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class=" search-border p-1 ms-0 ms-sm-3 d-none justify-content-between d-xl-flex">
+                                <input type="search" placeholder="Search products..."
+                                    class=" focus-none search-input-bg border-0 p-1">
+                                <button type="submit" class="bg-transparent border-0"><i
+                                        class="fa-solid fa-magnifying-glass search-icon-bg"></i></button>
+                            </div>
+                            <div class="dropdown d-none d-md-block">
+                                <button class="btn drop-bg dropdown-toggle border-0" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="/imgs/dropdownicon.png" alt="icon">
+                                    Help
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">page1</a></li>
+                                    <li><a class="dropdown-item" href="#">page2</a></li>
+                                    <li><a class="dropdown-item" href="#">page3</a></li>
+                                </ul>
+                            </div>
+                            <div class="template-icon ms-2">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="/imgs/adminmsg.svg" alt="message" class="w-100">
+                                </a>
+                            </div>
+                            <div class="template-icon ms-2">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="/imgs/adminnotification.svg" alt="message" class="w-100">
+                                </a>
+                            </div>
+                            <div class="ms-2 d-flex align-items-center">
+                                <div class="proflie-size">
+                                    <a href="#" class="text-decoration-none">
+                                        <img src="/imgs/profilepic.svg" alt="profile" class="w-100 p-1">
+                                    </a>
+                                </div>
+                                <div class="ms-2 d-none d-md-block">
+                                    <h5 class="mb-0">Name Here</h5>
+                                    <p class="mb-0">Admin</p>
+                                </div>
+                            </div>
+                            <div class="d-block d-md-none ms-2 template-icon">
+                                <img src="/imgs/templatebar.svg" alt="bar" class="w-100 p-2" id="toggleButton">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-bottom">
+                <div class="right-inner h-100 d-flex flex-column">
+                    <div class="container-fluid h-100">
+                        <div class=" h-100 d-flex flex-column">
+                            <div class=" d-flex flex-column flex-md-row  justify-content-between ">
+                                <div>
+                                    <h2>Customer Appointments</h2>
+                                    <p class="mb-0">Dashboard <span class="mx-1">></span>Customer Appointments</p>
+                                </div>
+                                <div class="mt-3 mt-md-0">
+                                    <button type="button" class="create-new-btn">+ Create New Appointment</button>
+                                </div>
+                            </div>
+                            <div class="table-responsive mt-4 main-table">
+                                <table class="table user-table">
+                                    <thead class="no-wrap">
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Customer Name</th>
+                                            <th>Service Type</th>
+                                            <th>Assignee</th>
+                                            <th>Date & Time</th>
+                                            <th>Contact</th>
+                                            <th>Action</th>
+                                            <th>More</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="table-shadow">
+                                        <tr class="table-content">
+                                            <td>127</td>
+                                            <td>
+                                                <div class="d-flex align-items-center justify-content-center">
+                                                    <div class="customer-img">
+                                                        <img src="/imgs/usertableimg.svg" alt="User" class="w-100">
+                                                    </div>
+                                                    <div>
+                                                        <p class="mb-0 ms-2 no-wrap">Anglen Anderson</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>Haircut</td>
+                                            <td class="no-wrap">jhon Steve</td>
+                                            <td>
+                                                <div class="d-flex flex-column justify-content-start">
+                                                    <p class="mb-0 no-wrap">18th November 2025</p>
+                                                    <p class="mb-0">11 AM - 12 AM</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class=" d-flex justify-content-center align-items-center">
+                                                    <a href="#" class="text-decoration-none table-icon"
+                                                        data-bs-toggle="modal" data-bs-target="#bussinesscallModal">
+                                                        <img src="/imgs/tablecall.svg" alt="call" class=" w-100 p-2">
+                                                    </a>
+                                                    <a href="#" class="text-decoration-none table-icon ms-2"
+                                                        data-bs-toggle="modal" data-bs-target="#bussinessmailModal">
+                                                        <img src="/imgs/tablemail.svg" alt="mail" class=" w-100 p-2">
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class=" d-flex justify-content-center align-items-center">
+                                                    <a href="#" class="text-decoration-none table-icon2 ms-2"
+                                                    data-bs-toggle="modal" data-bs-target="#approveModal">
+                                                    <img src="/imgs/bussinessaction1.svg" alt="Reschedule" class=" w-100 p-2">
+                                                </a>
+                                                    <a href="#" class="text-decoration-none table-icon ms-2"
+                                                        data-bs-toggle="modal" data-bs-target="#reschudleModal">
+                                                        <img src="/imgs/tick.svg" alt="Reschedule" class=" w-100 p-2">
+                                                    </a>
+                                                    <a href="#" class="text-decoration-none table-icon3 ms-2"
+                                                        data-bs-toggle="modal" data-bs-target="#bussinessdelModal">
+                                                        <img src="/imgs/bussinesstrash.svg" alt="Dlete"
+                                                            class=" w-100 p-2">
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <a href="#" class="text-decoration-none table-icon">
+                                                        <img src="/imgs/tablemore.svg" alt="More" class="">
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="pagination d-flex justify-content-end mt-auto">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination">
+                                        <li class="page-item disabled">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span><i class="fa-solid fa-arrow-left"></i></span> Previous
+                                            </a>
+                                        </li>
+                                        <li class="page-item "><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item d-none d-sm-block"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item active" aria-current="page">
+                                            <a class="page-link  d-none d-sm-block" href="#">3</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link  d-none d-sm-block">...</a>
+                                        </li>
+                                        <li class="page-item d-none d-sm-block"><a class="page-link" href="#">67</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">68</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                Next <span><i class="fa-solid fa-arrow-right"></i></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="bussinesscallModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h1 class="modal-title fs-3 color-purple" id="exampleModalLabel">Make a Call</h1>
+                    <button type="button" class="btn-close modal-close focus-none" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center dark-black">
+                    <p class="mb-0 modal-text"> Are you sure to make a Call?</p>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn modal-call" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn modal-cancel" data-bs-dismiss="modal">Yes Make a Call</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="bussinessmailModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h1 class="modal-title fs-3 color-purple" id="exampleModalLabel">Email Composite</h1>
+                    <button type="button" class="btn-close modal-close focus-none" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body dark-black">
+                    <form>
+                        <div class="row">
+                            <div class="col-12">
+                                <label for="to" class="form-label my-2">To</label>
+                                <input type="text" id="to" placeholder="Recipients"
+                                    class="form-control form-professtion focus-none form-bg border-0">
+                            </div>
+                            <div class="col-12">
+                                <label for="from" class="form-label my-2">From</label>
+                                <input type="text" id="from" placeholder="Compositer"
+                                    class="form-control form-professtion focus-none form-bg border-0">
+                            </div>
+                            <div class="col-12">
+                                <label for="subject" class="form-label my-2">Subject</label>
+                                <input type="text" id="subject" placeholder="Subject"
+                                    class="form-control form-professtion focus-none form-bg border-0">
+                            </div>
+                            <div class="col-12">
+                                <label for="body" class="form-label my-2">Body</label>
+                                <textarea id="body" placeholder="body Text....."
+                                    class="form-control form-professtion focus-none form-bg border-0 no-resize"
+                                    rows="8"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn modal-cancel" data-bs-dismiss="modal">Submit Email</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="reschudleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered reschule-modal">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h1 class="modal-title fs-3 color-purple" id="exampleModalLabel">Reschedule</h1>
+                    <button type="button" class="btn-close modal-close focus-none" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body dark-black">
+                    <form>
+                        <div class="row">
+                            <div class="col-12">
+                                <label for="name" class="form-label my-2">Name</label>
+                                <input type="text" id="bussinessn" placeholder="Autofill"
+                                    class="form-control form-professtion focus-none form-bg border-0">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="pnumber" class="form-label my-2">Phone Number</label>
+                                <input type="tel" id="pnumber" placeholder="Autofill"
+                                    class="form-control form-professtion focus-none form-bg border-0">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="mail" class="form-label my-2">Email</label>
+                                <input type="email" id="mail" placeholder="Autofill"
+                                    class="form-control form-professtion focus-none form-bg border-0">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="date" class="form-label my-2">Date</label>
+                                <input type="text" id="date" placeholder="12/12/24"
+                                    class="form-control form-professtion focus-none form-bg border-0">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="time" class="form-label my-2">Time</label>
+                                <input type="text" id="time" placeholder="11:00 AM"
+                                    class="form-control form-professtion focus-none form-bg border-0">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="Subscription" class="form-label my-2">Service Type</label>
+                                <select id="Subscription"
+                                    class="form-select form-professtion focus-none form-bg border-0">
+                                    <option value="" disabled selected>Haircut</option>
+                                    <option value="basic">Haircut</option>
+                                    <option value="standard">teacher</option>
+                                    <option value="premium">doctor</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="timeduration" class="form-label my-2">Time Duration</label>
+                                <input type="text" id="timeduration" placeholder="1 hour"
+                                    class="form-control form-professtion focus-none form-bg border-0">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn modal-cancel" data-bs-dismiss="modal">Save & Notify Bussiness
+                        Owner</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="bussinessdelModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h1 class="modal-title fs-3 color-purple" id="exampleModalLabel">Delete Business</h1>
+                    <button type="button" class="btn-close modal-close focus-none" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center dark-black">
+                    <p class="mb-0 modal-text">   Are you sure to Delete this Bussiness?</p>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn modal-cancel" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn modal-del">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="approveModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h1 class="modal-title fs-3 color-purple" id="exampleModalLabel">Appointment Approved</h1>
+                    <button type="button" class="btn-close modal-close focus-none" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body dark-black">
+                    <div class="p-4">
+                        <p class="mb-0 text-center modal-text">Appointment Details</p>
+                        <div class="d-flex justify-content-between">
+                            <p class="mb-0 modal-text">Name</p>
+                            <p class="mb-0 modal-text">John Doe</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <p class="mb-0 modal-text">Phone:</p>
+                            <p class="mb-0 modal-text">123456</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <p class="mb-0 modal-text">Email:</p>
+                            <p class="mb-0 modal-text">user@gmail.com</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <p class="mb-0 modal-text">Date::</p>
+                            <p class="mb-0 modal-text">12/12/24</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <p class="mb-0 modal-text">Time:</p>
+                            <p class="mb-0 modal-text">11:00 AM</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <p class="mb-0 modal-text">Service type:</p>
+                            <p class="mb-0 modal-text">Haircut</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <p class="mb-0 modal-text">Time Duration:</p>
+                            <p class="mb-0 modal-text">1 hour</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn modal-call" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn modal-cancel" data-bs-dismiss="modal">Yes Make a Call</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
